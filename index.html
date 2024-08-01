@@ -26,7 +26,8 @@
                 type="button" 
                 aria-controls="slides-images" 
                 aria-label="previous slide" 
-                id="prev">
+                id="prev"
+                onclick="previousSlide()">
                 <svg
                     xmlns="http://www.w3.org/2000/svg" 
                     width="36" 
@@ -45,7 +46,8 @@
                 type="button" 
                 aria-controls="slides-images" 
                 aria-label="next slide" 
-                id="next">
+                id="next"
+                onclick="nextSlide()">
                 <svg
                     xmlns="http://www.w3.org/2000/svg" 
                     width="36" 
@@ -62,8 +64,8 @@
             </button>
 
             <nav>
-                <button type="button"></button>
-                <button type="button"></button>
+                <button type="button" onclick="previousSlide()"></button>
+                <button type="button" onclick="nextSlide()"></button>
             </nav>
         </section>
     </main>
