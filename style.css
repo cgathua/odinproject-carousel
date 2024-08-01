@@ -1,0 +1,85 @@
+:root {
+    --color-black: black;
+    --image-transition: transition: opacity 0.5s ease-in-out;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.slides {
+    max-width: 86%;
+    position: relative;
+    margin: 2rem auto;
+}
+
+.carousel {
+    width: 640px;
+    height: 427px;
+    overflow: hidden;
+    position: relative;
+    max-width: 86%;
+    margin: auto;
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: var(--image-transition);
+}
+
+.carousel img.active {
+    opacity: 1;
+}
+
+#prev,
+#next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    user-select: none;
+}
+
+#next {
+    right: 0;
+}
+
+button {
+    background-color: transparent;
+}
+
+nav>button {
+    cursor: pointer;
+    height: 1rem;
+    width: 1rem;
+    margin-top: 0.5rem;
+    background-color: var(--color-black);
+    opacity: 1;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.active,
+nav>button:hover {
+    opacity: 0.5;
+}
+
+nav {
+    text-align: center;
+}
