@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <!--SEO-->
+    <meta name="title" content="odin project image slider">
+    <meta name="description" content="This is an image slider assignment, from the odin project">
+    <!--STYLESHEET-->
+    <link rel="stylesheet" href="style.css">
+    <!--LOCAL JAVASCRIPT-->
+    <script defer src="./main.js"></script>
+</head>
+
+<body>
+    <main>
+        <section class="slides" aria-roledescription="carousel">
+            <figure class="carousel" aria-label="carousel images">
+                <img src="./imgs/pexels-giorgio-de-angelis-482403-1191146.webp" class="active" alt="bmw motorcycle" width="640" height="427">
+                <img src="./imgs/pexels-wdnet-515674.webp" alt="bmw engine" width="640" height="427">
+                <img src="./imgs/pexels-maria-geller-801267-2127028.webp" alt="bmw motorcycle" width="640" height="427">
+            </figure>
+            <button 
+                type="button" 
+                aria-controls="slides-images" 
+                aria-label="previous slide" 
+                id="prev">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="36" 
+                    height="36" 
+                    viewBox="0 0 24 24" 
+                    fill="none"
+                    stroke="currentColor" 
+                    stroke-width="2" 
+                    stroke-linecap="round" 
+                    stroke-linejoin="round"
+                    class="feather feather-chevron-left">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+            <button 
+                type="button" 
+                aria-controls="slides-images" 
+                aria-label="next slide" 
+                id="next">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="36" 
+                    height="36" 
+                    viewBox="0 0 24 24" 
+                    fill="none"
+                    stroke="currentColor" 
+                    stroke-width="2" 
+                    stroke-linecap="round" 
+                    stroke-linejoin="round"
+                    class="feather feather-chevron-right">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+
+            <nav>
+                <button type="button"></button>
+                <button type="button"></button>
+            </nav>
+        </section>
+    </main>
+
+</body>
+
+</html>
